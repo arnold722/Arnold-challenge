@@ -8,12 +8,113 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-
+    <header class="header">
+        <div class="header-div">
+            <div class="header-menu">
+        
+                <div class="logo">
+                    <a href="index.html"><img src="./image/logo.svg" alt="Sneakers Logo"></a>
+                </div>
+                <nav class="navbar" aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-picture">
+                <div class="cart-wrapper">
+                    <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+                        <img src="./image/icon-cart.svg" alt="Cart">
+                    </button>
+                    
+                </div>
+                <div class="profile-avatar">
+                    <button class="profile-btn" aria-label="User profile">
+                        <img src="./image/image-avatar.png" alt="User avatar">
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- MAIN -->
     <main>
+      <main class="container" id="main-content">
+        <section class="product-section" aria-label="Product details">
 
+            <div class="product-gallery">
+                <!-- Main Product Image project -->
+                <div class="main-image-wrapper">
+                    <button class="mobile-gallery-btn prev" id="mobilePrev" aria-label="Previous image">
+                        <img src="./image/icon-previous.svg" alt="">
+                    </button>
+                    <img src="./image/image-product-1.jpg" 
+                         alt="Product image 1" 
+                         class="main-image" 
+                         id="mainImage">
+                    <button class="mobile-gallery-btn next" id="mobileNext" aria-label="Next image"> 
+                        <img src="./image/icon-next.svg" alt="">
+                    </button>
+                </div>
+
+                <!-- Thumbnail Images -->
+                <div class="thumbnails">
+                    <div class="thumbnail active" data-image="./images/image-product-1.jpg" tabindex="0" role="button" aria-label="Product image 1">
+                        <img src="./image/image-product-1-thumbnail.jpg" alt="Product thumbnail 1">
+                    </div>
+                    <div class="thumbnail" data-image="./images/image-product-2.jpg" tabindex="0" role="button" aria-label="Product image 2">
+                        <img src="./image/image-product-2-thumbnail.jpg" alt="Product thumbnail 2">
+                    </div>
+                    <div class="thumbnail" data-image="./images/image-product-3.jpg" tabindex="0" role="button" aria-label="Product image 3">
+                        <img src="./image/image-product-3-thumbnail.jpg" alt="Product thumbnail 3">
+                    </div>
+                    <div class="thumbnail" data-image="./images/image-product-4.jpg" tabindex="0" role="button" aria-label="Product image 4">
+                        <img src="./image/image-product-4-thumbnail.jpg" alt="Product thumbnail 4">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-info">  
+                <div class="company-name">SNEAKER COMPANY</div>
+
+                <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+
+                <p class="product-description">
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                </p>
+
+                <div class="pricing-section">
+                    <div class="pricing-container">
+                        <span class="current-price">$125.00</span>
+                        <span class="discount-badge">50%</span>
+                    </div>
+                    <span class="original-price">$250.00</span>
+                </div> 
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decreaseBtn" aria-label="Decrease quantity">
+                            <img src="./image/icon-minus.svg" alt="Minus">  
+                        </button>
+                        <span class="quantity-display" id="quantityDisplay">0</span>
+                        <button class="quantity-btn" id="increaseBtn" aria-label="Increase quantity">    
+                            <img src="./image/icon-plus.svg" alt="Plus">
+                        </button>
+                    </div>
+
+                    <button class="add-to-cart-btn" id="addToCartBtn">
+                        <img src="./image/icon-cart.svg" alt="Cart">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
     </main>
     <!-- FOOTER -->
      <footer>
